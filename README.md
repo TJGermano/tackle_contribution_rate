@@ -13,10 +13,13 @@ The raw data used in this project is sourced from Kaggle. Below are the links to
 To use the scripts in this repository, download the datasets from Kaggle and place them in the `data` directory.
 
 ## Scripts
-Here is a list of scripts included in this repository:
 
 ### Data Manipulation
 - `scripts/calculate_distance.py`: This script reads the raw data from Kaggle, processes it to calculate the distance of each player to the ball carrier for each frame, and outputs the data in a new form suitable for analysis. 
+
+### Player Play Accumulation
+- `scripts/accumulate_player_plays.py`: This script aggregates the total number of plays for each player and calculates the number of plays within each distance bucket (1 yard, 3 yards, 5 yards) from the ball carrier during tackle events.
+
 ## Usage
 
 ### Steps to Use the Data Manipulation Script:
@@ -40,8 +43,26 @@ Here is a list of scripts included in this repository:
 
    - The script will process the data and generate a new CSV file with the distances calculated.
 
+### Steps to Use the Player Play Accumulation Script:
+
+1. **Download the Script**:
+   - Download the `accumulate_player_plays.py` script from this repository.
+
+2. **Ensure Data Availability**:
+   - Ensure you have run the `calculate_distance.py` script for each week of data and have the resulting `week_X_distance.csv` files.
+
+3. **Run the Script**:
+   - Open a terminal or command prompt.
+   - Navigate to the directory where the script and the data files are located.
+   - Run the script using the following command:
+
+     ```sh
+     python scripts/accumulate_player_plays.py
+     ```
+
+   - The script will process the data and print the results for defensive players sorted by plays within 1 yard.
+
 ### Note:
-- This script needs to be run separately for each week of tracking data. Update the script to load the appropriate week's data file before running it.
 - Ensure you have all the necessary Python libraries installed. You can install them using:
 
     ```sh
