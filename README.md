@@ -20,6 +20,9 @@ To use the scripts in this repository, download the datasets from Kaggle and pla
 ### Player Play Accumulation
 - `scripts/accumulate_player_plays.py`: This script aggregates the total number of plays for each player and calculates the number of plays within each distance bucket (1 yard, 3 yards, 5 yards) from the ball carrier during tackle events.
 
+### Player Statistics Calculation
+- `scripts/calculate_player_stats.py`: This script merges the tackles and players data, calculates the total tackles, missed tackles, and assists for each player, and merges this with the distance data. It can also export the final dataset to a CSV file.
+
 ## Usage
 
 ### Steps to Use the Data Manipulation Script:
@@ -61,6 +64,25 @@ To use the scripts in this repository, download the datasets from Kaggle and pla
      ```
 
    - The script will process the data and print the results for defensive players sorted by plays within 1 yard.
+
+### Steps to Use the Player Statistics Calculation Script:
+
+1. **Download the Script**:
+   - Download the `calculate_player_stats.py` script from this repository.
+
+2. **Ensure Data Availability**:
+   - Ensure you have the `tackles.csv`, `players.csv`, and the results from `accumulate_player_plays.py`.
+
+3. **Run the Script**:
+   - Open a terminal or command prompt.
+   - Navigate to the directory where the script and the data files are located.
+   - Run the script using the following command:
+
+     ```sh
+     python scripts/calculate_player_stats.py
+     ```
+
+   - The script will process the data, calculate the player stats, and print the results. You can uncomment the line to save the final dataset to a CSV file if needed.
 
 ### Note:
 - Ensure you have all the necessary Python libraries installed. You can install them using:
