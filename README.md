@@ -2,7 +2,7 @@
 # My Data Analysis Project
 
 ## Introduction
-This repository contains the scripts and analysis for my data analysis project.
+This repository contains the scripts and analysis for my data analysis project. The goal is to take a differnt look at tackling in the NFL. By leveraging geographical data, we can find out how far each player is from the ball at all points during the game. We can take the distance a defensive player is from the ball carrier at the point of the tackle. We then use different distances to assign credit to the defensive player for contributing to the tackle. To start, we say a defensive player within 1 yard of the ball carrier contributes to a tackle. We use the total plays within 1 yard and the total plays a tackle was made when a player was on the field to get the tackle contribution rate. 
 
 ## Data
 The raw data used in this project is sourced from Kaggle. Below are the links to the datasets:
