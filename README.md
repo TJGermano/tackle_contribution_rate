@@ -58,7 +58,7 @@ This CSV file contains the processed data used for generating the visualizations
 ### Steps to Use the Tackle Contribution Analysis Script:
 
 1. **Download the Script**:
-   - Download the `your_script.py` script from the `tackle_contribution_1_yard` folder.
+   - Download the `analyze_tackle_contribution_1_yard.py script from the `tackle_contribution_1_yard` folder.
 
 2. **Ensure Data Availability**:
    - Ensure you have the `tackle_distance_data.csv` file from the `output` directory.
